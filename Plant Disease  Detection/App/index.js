@@ -18,4 +18,4 @@ app.use(passport.session());
 app.use('/', require('./controller/controller'));
 app.use('/register', require('./controller/controller'));
 app.use('/upload', require('./controller/controller'));
-app.listen(3000,console.log("The server is running"))
+app.listen(process.env.PORT,console.log("The server is running"))
